@@ -12,7 +12,7 @@ class Api:
     """Class that checks for Infrastructure"""
     def __init__(self):
         self.url = "https://api.mangadex.org"
-        self.timeout = 0
+        self.timeout = 5
 
     def ping(self) -> Optional[str]:
         """ Ping healthchech

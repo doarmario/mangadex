@@ -116,11 +116,11 @@ class Chapter:
         part1 = f"Chapter(chapter_id = {self.chapter_id}, title = {self.title}, \
                         volume = {self.volume}, chapter = {self.chapter}, \
                         translatedLanguage = {self.translated_language} \n"
-        part2 = f"data = List[filenames], publishAt = {self.publish_at}, \
-                        createdAt = {self.created_at}, uploadedAt = {self.updated_at}, \
-                        group_id = {self.group_id}, manga_id = {self.manga_id}, \
-                        uploader = {self.uploader})"
-        return f"{part1}{part2}"
+        #part2 = f"data = List[filenames], publishAt = {self.publish_at}, \
+        #                createdAt = {self.created_at}, uploadedAt = {self.updated_at}, \
+        #                group_id = {self.group_id}, manga_id = {self.manga_id}, \
+        #                uploader = {self.uploader})"
+        return f"{part1}"#{part2}"
 
     def get_chapter_list(self, **kwargs) -> List["Chapter"]:
         """Get information about multiple chapters

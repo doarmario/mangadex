@@ -744,7 +744,7 @@ class Manga:
         resp = URLRequest.request_url(
             url, "GET", params=params, timeout=self.api.timeout
         )
-        return Manga.create_manga_list(resp)
+        return {"mangas":Manga.create_manga_list(resp),"total":resp["total"]}
 
     def manga_feed(self, manga_id: str, **kwargs) -> List[Chapter]:
         """
